@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TechConnect - Event Registration</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			a {
+				text-decoration: none;
+			}
+			html {
+				font-family: sans-serif;
+			}
+			body {
+				max-width: 60%;
+				margin: 5px auto;
+				color: black;
+				background-color: #fefefe;
+			}
+			form,
+			table,
+			footer {
+				max-width: 40rem;
+				margin: 20px auto;
+			}
+			form > div > div {
+				padding: 20px;
+			}
+			.p-5 {
+				padding: 5px;
+			}
+			table {
+				border-collapse: collapse;
+				border: 2px solid rgb(140 140 140);
+				font-size: 0.8rem;
+				letter-spacing: 1px;
+			}
+			th,
+			td {
+				border: 1px solid rgb(160 160 160);
+				padding: 8px 10px;
+			}
+            input, select {
+                width: 100%;
+                padding: 8px 10px;
+            }
+            input[type="radio"], input[type="checkbox"] {
+                width: fit-content;
+                margin-left: 8px;
+            }
+            label {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            li {
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+		</style>
+	</head>
+	<body>
+		<!-- header section - intro section -->
+		<header>
+			<img
+				src="https://images.pexels.com/photos/8355222/pexels-photo-8355222.jpeg?auto=compress&cs=tinysrgb&w=600"
+				alt="laptops on a desk"
+			/>
+			<h1>TechConnect is here</h1>
+			<p>
+				Join us for an electrifying experience that brings together tech
+				enthusiasts, industry leaders, and innovative minds from around the
+				world. Discover the latest advancements in technology, network with
+				professionals, and gain insights that will shape the future. Whether
+				you're a developer, entrepreneur, or simply passionate about tech,
+				TechConnect 2025 offers a platform to learn, collaborate, and turn ideas
+				into reality.
+			</p>
+			<h2>🚀 Explore. Innovate. Connect. The future starts here!</h2>
+		</header>
+		<!-- about section - promo video -->
+		<section id="about">
+			<video
+				width="800"
+				height="550"
+				muted
+				poster="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMGV2ZW50c3xlbnwwfHwwfHx8MA%3D%3D"
+			>
+				<source src="video.mp4" type="video/mp4" />
+				Your browser does not support the video element
+			</video>
+			<h1>Why join our confrence this year</h1>
+			<ol type="I">
+				<li>5+ New Speakers</li>
+				<li>Product showcase from more than 30 companies</li>
+				<li>Networking opportunities</li>
+				<li>10+ new product launches</li>
+			</ol>
+		</section>
+		<!-- form section - Registration of events -->
+		<section id="signup">
+			<h1 style="text-align: center">Sign up for our next confrence in May.</h1>
+			<form action="#" method="post">
+				<div>
+					<div class="p-5">
+						<label for="name">Name:</label>
+						<input required type="text" id="name" placeholder="Full Names" />
+					</div>
+					<div class="p-5">
+						<label for="password">Password:</label>
+						<input
+							required
+							type="password"
+							id="password"
+							placeholder="Enter a valid password"
+						/>
+					</div>
+					<div class="p-5">
+						<label for="email">Email:</label>
+						<input
+							required
+							type="email"
+							id="email"
+							placeholder="Enter a valid email e.g john@email.com"
+						/>
+					</div>
+					<div class="p-5">
+						<label for="dob">Date of birth: </label>
+						<input type="date" id="dob" placeholder="date of birth" />
+					</div>
+				</div>
+				<!-- radio button fieldset -->
+				<fieldset>
+					<legend>Have you attended a previous confrence</legend>
+					<div class="p-5">
+						<input type="radio" name="check" id="yes" value="yes" />
+						<label for="yes"> yes </label>
+					</div>
+					<div class="p-5">
+						<input type="radio" name="check" id="no" value="no" checked />
+						<label for="no"> no</label>
+					</div>
+				</fieldset>
+				<!-- select options for event dates -->
+				<div class="p-5">
+					<label for="date-select">Choose the date you will attend</label>
+					<select name="session" id="date-select">
+						<option value="">
+							-- Please choose a date you will attend the event --
+						</option>
+						<option value="session-1">March 24 2026</option>
+						<option value="session-2">March 25 2026</option>
+						<option value="session-3">March 26 2026</option>
+					</select>
+				</div>
+				<!-- chekcbox section for topics of interest -->
+				<fieldset>
+					<legend>Choose the topics you are interested in</legend>
+
+					<div class="p-5">
+						<input type="checkbox" id="sre" name="sre" />
+						<label for="sre">Software Development </label>
+					</div>
+					<div class="p-5">
+						<input type="checkbox" id="data" name="sre" />
+						<label for="data">Data Analysis </label>
+					</div>
+					<div class="p-5">
+						<input type="checkbox" id="ai-ml" name="ai-ml" />
+						<label for="ai-ml">AI and Machine Learning: </label>
+					</div>
+					<div class="p-5">
+						<input type="checkbox" id="lld" name="lld" />
+						<label for="lld">Low Level Development </label>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+		<section>
+			<h1 style="text-align: center">Contacts</h1>
+			<table>
+				<caption class="p-5">
+					A List of available contacts across all regions
+				</caption>
+				<thead>
+					<tr class="p-5">
+						<th scope="col">Name</th>
+						<th scope="col">Email</th>
+						<th scope="col">Mobile</th>
+						<th scope="col">Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="p-5">
+						<td>John Doe</td>
+						<td>johndoe@email.com</td>
+						<td>+254 71223344</td>
+						<td>Nairobi, Kenya</td>
+					</tr>
+					<tr class="p-5">
+						<td>Grace Shannon</td>
+						<td>graceshannon@email.com</td>
+						<td>+254 71223344</td>
+						<td>Lagos, Nigeria</td>
+					</tr>
+					<tr class="p-5">
+						<td>Trevor Chalobah</td>
+						<td>trevor233@email.com</td>
+						<td>+254 71223344</td>
+						<td>Kampala, Uganda</td>
+					</tr>
+					<tr class="p-5">
+						<td>Jakes Tinka</td>
+						<td>jtk@email.com</td>
+						<td>+254 71223344</td>
+						<td>Mombasa, Kenya</td>
+					</tr>
+					<tr class="p-5">
+						<td>Favor Takuma</td>
+						<td>ftk245@email.com</td>
+						<td>+254 71223344</td>
+						<td>Abuja, Nigeria</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<footer>
+			<h1>A Recap of the event on the previous year</h1>
+			<audio controls>
+				<source src="audio.mp3" type="audio/mp3" />
+				Your browser does not support the audio element.
+			</audio>
+		</footer>
+	</body>
+</html>
